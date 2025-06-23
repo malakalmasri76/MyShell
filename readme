@@ -1,0 +1,35 @@
+
+MYSHELL - A Simple Shell Implementation
+
+DESCRIPTION:
+    This is a simple shell program that supports basic command execution,
+    I/O redirection, background processes, and several built-in commands.
+
+BUILT-IN COMMANDS:
+    cd [directory]  - Change directory (shows current directory if no argument)
+    clr            - Clear the screen
+    dir [directory] - List directory contents (current directory if no argument)
+    environ        - Display all environment variables
+    echo [text]    - Display text
+    help           - Display this help information
+    pause          - Pause until Enter is pressed
+    quit           - Exit the shell
+
+FEATURES:
+    - Command execution with arguments
+    - I/O redirection using < > >>
+    - Background process execution using &
+    - Batch file execution by passing filename as argument
+    - Environment variable support
+
+USAGE:
+    Interactive mode: ./myshell
+    Batch mode:      ./myshell batchfile
+
+EXAMPLES:
+    ls -la
+    echo "Hello World" > output.txt
+    cat < input.txt > output.txt
+    sleep 5 &
+    cd /home/user
+    dir
